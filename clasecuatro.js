@@ -1,0 +1,7 @@
+src(o0)
+    .modulate(noise(3),0.005)
+    .blend(shape(4),0.01)
+    .mask(voronoi(13))
+    .color(7, 2, 2)
+    .rotate( () => time%140 )
+    .out(o0)
